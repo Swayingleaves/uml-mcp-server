@@ -153,7 +153,7 @@ For example:
 ```
 1. Understand the certification process of the project
 2. Generate UML code for the authentication process and generate a flowchart through UML-MCP Server
-3. Attention: "output_dir": "/Users/edy/vs-code/bjwa-task-project/uml-output"
+3. Attention: "output_dir": "/Users/my-project/uml-output"
 ```
 
 ### The Results Returned by UML Tools

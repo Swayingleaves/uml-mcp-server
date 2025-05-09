@@ -8,9 +8,6 @@ WORKDIR /app
 COPY requirements.txt ./
 COPY . .
 
-# Remove problematic zlib3 requirement
-RUN sed -i '/^zlib3/d' requirements.txt
-
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 

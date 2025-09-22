@@ -41,6 +41,18 @@ pip install -r requirements.txt
 
 ## 使用方法
 
+### 使用容器
+```bash
+# 构建容器
+docker compose build
+
+# 启动容器
+docker compose up -d
+
+# 访问验证 http://localhost:8001/see 
+
+```
+
 ### 作为 Python 库使用
 
 ```python

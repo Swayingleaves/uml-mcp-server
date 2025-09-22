@@ -1,0 +1,8 @@
+services:
+  uml-mcp-server:
+    build: .                    # 使用当前目录下的 Dockerfile 构建
+    image: uml-mcp-server       # 镜像名称
+    container_name: uml-mcp-server  # 👈 显式指定容器名
+    ports:
+      - "8001:8001"             # 宿主机8001 → 容器8000
+    restart: unless-stopped     # 可选：自动重启策略

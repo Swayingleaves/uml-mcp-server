@@ -582,7 +582,9 @@ if __name__ == "__main__":
     # 初始化并运行服务器
     logger.info("启动UML-MCP服务器")
     try:
-        mcp.run(transport='stdio')
+        mcp.settings.host='0.0.0.0'
+        mcp.settings.port=8001
+        mcp.run(transport='sse')
     except Exception as e:
         logger.critical(f"服务器运行出错: {str(e)}", exc_info=True)
     finally:
